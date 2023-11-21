@@ -1,4 +1,4 @@
-git&gitHub 순서
+# git&gitHub 순서
 
 * 초기 디렉터리 생성 시 순서
 
