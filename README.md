@@ -14,12 +14,12 @@ git&gitHub 순서
 1. git add .<br>
     .이란? == 현재 디렉터리 안 모든 파일과 폴더를 뜻함.
 2. git commit -m 'message'<br>
-    현재 스테이징된 파일의 기록명을 작성( 영어, 한글 모두 가능, 짧게 키워드 위주로 작성하기)
-    쇼핑몰 상품 페이지를 만들었다면?
+    현재 스테이징된 파일의 기록명을 작성(영어, 한글 모두 가능하나 영어 추천, 짧게 키워드 위주로 작성하기)<br>
+    ex) 쇼핑몰 상품 페이지를 만들었다면?<br>
     git commit -m 'shp man-product end'
 3. git push origin main<br>
-    drigin == gitHub 주소
-    main == Local 내 컴퓨터 위치
+    drigin == gitHub 주소<br>
+    main == Local 내 컴퓨터 위치<br>
     해석 == gitHub에 내 작업물을 push 하겠다.
 -------------------------------------------
 
