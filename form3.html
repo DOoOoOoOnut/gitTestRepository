@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="post" id="joinFrm">
+        <fieldset>
+            <legend>회원가입</legend>
+            <span>모든 이용약관에 동의합니다.</span>
+            <input type="checkbox" name="agree_all" value="agree_all">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">구분</th>
+                        <th scope="col">내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td>
+                            <input type="text" name="" value="user_id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">비밀번호</th>
+                        <td>
+                            <input type="password" placeholder="아이디와 다르게 입력" name="user_pwd" value="user_pwd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주민등록번호</th>
+                        <td>
+                            <input type="text" name="user_resi" value="user_resi_first">
+                            <input type="password" name="user_resi" value="user_resi_second">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">성별</th>
+                        <td>
+                            <label><input type="radio" name="gender" value="male">남</label>
+                            <label><input type="radio" name="gender" value="female">여</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">관심 직종</th>
+                        <td>
+                            <label><input type="checkbox" name="job" value="Web_director">웹기획자</label>
+                            <label><input type="checkbox" name="job" value="select_designer">편집디자이너</label>
+                            <label><input type="checkbox" name="job" value="Web_designer">웹디자이너</label>
+                            <label><input type="checkbox" name="job" value="Web_publisher">웹퍼블리셔</label>
+                            <label><input type="checkbox" name="job" value="frontend">프론트엔드개발자</label>
+                            <label><input type="checkbox" name="job" value="backend">백엔드개발자</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

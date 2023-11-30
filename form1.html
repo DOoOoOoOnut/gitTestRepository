@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>form-1</title>
+</head>
+<body>
+    <h1>폼 태그 연습-1(검색)</h1>
+    <!-- id,class 명칭은 =css,javascript 등 동적 프로그래밍 등 -->
+    <!-- form의 앙식들을 구분하기 뤼해 이름을 적을 때는 action 주소로 전송되는 개념의 서버와 연관되는 속성명을 작성해야한다. -->
+    <!-- value는 사용자가 input에 직접 값을 입력 시 사용자의 입력값을 인식하는 속성으로도 사용한다. -->
+    <!-- ex) 사용자가 아이디칸에 abc라고 쓴 경우 -->
+    <!-- => 아이디의 "abc" value가 action 서버의 저장값과 일치하는가? -->
+    <!-- => 로그인 성공 또는 실패 결과 도출 -->
+    <!-- value의 상황 해설하기 -->
+    <!-- 사용자가 블로그 검색창에 "vs"라고 검색 후 버튼을 눌렀다. 그 결과로 form은 사용자가 입력한 "vs"value를 action에 전송하여 그에 관련한 검색 결과를 화면에 출력하였다.-->
+    <form action="#" method="get" id="searchFrm">
+        <fieldset>
+            <legend>검색양식</legend>
+            <input type="text" name="search" class="search",search.tevt autocomplete="검색">
+        </fieldset>
+    </form>
+    <h1>폼 태그 연습-2</h1>
+    <form action="#" method="post" id="loginFrm">
+        <fieldset>
+            <legend>로그인</legend>
+            <span>아이디 :</span>
+            <input type="text" placeholer="이름을 입력하세요"name="user_id" class="user_id">
+            <br>
+            <span>비밀번호 :</span>
+            <input type="password" placeholder="비밀번호를 입력하세요" name="user_pwd" class="user_pwd">
+            <br>
+            <span>주민등록번호 :</span>
+            <input type="text" name="regident_first" class="resident" maxlength="6">
+            <input type="text" name="regident_last" class="resident" maxlength="1">
+            <input type="text" name="regident_hide" class="resident_hide" value="******" readonly desabled>
+            <!-- <input type="text" name="user_resi_first" class="user_resi" maxlength="6" >
+            <input type="password" name="user_resi_second" class="user_resi" maxlength="7" > -->
+            <br>
+            <span>자동완성</span>
+            <!-- input 선택앙식의 ㄱㅇ우 -> name 속성은 그룹명으로 사용한다 -->
+            <!-- input 선택앙식의 ㄱㅇ우 -> ㅍ밀ㅇ 속성은 그룹명으로 사용한다 -->
+            <label><input type="checkbox" name="auto_complete_chk" value="auto_complete_id">아이디</label>   
+            <label><input  type="checkbox" name="auto_complete_pwd">비밀번호</label>
+            <br>
+            <span>성별</span>
+            <label><input type="radio" name="gender" value="male">남</label>
+            <label><input type="radio" name="gender" value="female">여</label>
+            <label><input type="radio" name="gender" value="none">공개안함</label>
+            <br>
+            <span>가입경로</span>
+            <label><input type="radio" name="join_path" value="recommand">지인추천</label>
+            <label><input type="radio" name="join_path" value="sns">SNS</label>
+            <label><input type="radio" name="join_path" value="ect">기타</label>
+            <br>
+            <span>사진 업로드(이미지만 첨부가능)</span>
+            <input type="file" name="user_photo" accept="image/*">
+            <!-- accept="application/pdf:" -->
+            <br>
+            <input type="submit"><!--확인, 로그인, 결제 등 서버전송 가능-->
+            <input type="reset"><!-- 삭제, 취소 등 서버업로드 취소 가능-->
+            <input type="button"><!-- 범용(스크립트 이용 직접 명령어 지정 시 자유로운 사용 가능)ex) 이전, 다음이동, 우편번호검색 등-->
+            <button type="submit" id="btn_join">회원가입</button>
+            <button type="reset" id="btn_reset">가입취소</button>
+            <button type="button" id="btn_up">위로 이동</button>
+        </fieldset>
+    </form>
+    <h1>form태그 연습-3 (회원가입)</h1>
+    <form action="#" method="post" id="joinFrm">
+        <fieldset>
+            <legend>로그인</legend>
+            <span>이름 :</span>
+            <input type="text" placeholder="이름을 입력하세요" name="user_name" class="user_name">
+        </fieldset>
+    </form>
+    <h1>폼 태그 연습 -4 (설문조사)</h1>
+    <form action="#" method="post" id="askFrm">
+        <fieldset>
+            <legend>설문조사</legend>
+            <span>이름 :</span>
+            <input type="text" placeholder="이름" name="ask_name" class="ask">
+            <br>
+            <span>나이 :(필수입력)</span>
+            <input type="numbrt" repuired name="survey_age" class="survey">
+        </fieldset>
+    </form>
+</body>
+</html>
