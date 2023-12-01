@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>183p quiz</title>
+</head>
+<body>
+    <!-- 안내 -->
+    <div class="top">
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+    </div>
+    <hr>
+    <!-- 작성란 -->
+    <div class="form">
+        <form action="#" method="get" id="info">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="name_info">이름</label>
+                        <input type="text" id="name_info" placeholder="공백없이 입력하세요">
+                    </li>
+                    <li>
+                        <label for="phone_info">연락처</label>
+                        <input type="tel" id="phone_info">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>지원 분야</legend>
+                <label><input type="radio" name="field" value="web_publishing">웹 퍼블리싱</label><br>
+                <label><input type="radio" name="field" value="web_app_developer">웹 애플리케이션 개발</label><br>
+                <label><input type="radio" name="field" value="developing_improve">개발 환경 개선</label>
+            </fieldset>
+            <fieldset>
+                <legend>지원 동기</legend>
+                <textarea cols="50" rows="5" maxlength="60" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="submit" id="btn_join">접수하기</button>
+                <button type="reset" id="btn_reset">다시 쓰기</button>
+            </fieldset>
+        </form>
+    </div>
+    <!-- 쌤 피드백 
+        1. fieldset 너무 많이 쓰지 말기~ 굳이 필요없음. 
+        2. 블록끼리 생각해서 묶어주는 방식이 더 편함.
+        3. 묶는 방식은 하나로 통일해주는 게 좋음. -->
+    <!-- 수정 -->
+    <div class="top">
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+    </div>
+    <hr>
+    <form action="#" method="post" id="info_2">
+        <fieldset>
+            <legend>지원양식</legend>
+            <dl>
+                <dt>개인 정보</dt>
+                <dd>
+                    <label for="name_info">이름</label>
+                    <input type="text" id="name_info_2" placeholder="공백없이 입력하세요"><br>
+                    <label for="phone_info">연락처</label>
+                    <input type="tel" id="phone_info_2">
+                </dd>
+                <dt>지원 분야</dt>
+                <dd>
+                    <label><input type="radio" name="field" value="web_publishing">웹 퍼블리싱</label><br>
+                    <label><input type="radio" name="field" value="web_app_developer">웹 애플리케이션 개발</label><br>
+                    <label><input type="radio" name="field" value="developing_improve">개발 환경 개선</label>
+                </dd>
+                <dt>지원 동기</dt>
+                <dd>
+                    <textarea cols="50" rows="60" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+                </dd>
+            </dl>                
+            <div class="btn_btn">
+                <button type="submit" id="btn_join_2">접수하기</button>
+                <button type="reset" id="btn_reset_2">다시 쓰기</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
